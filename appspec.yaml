@@ -1,9 +1,10 @@
-version: 0.0
+version: 1
 Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "TASK-DEFINITION-ARN"
+        TaskDefinition: "TASK_DEFINITION"
         LoadBalancerInfo:
-          ContainerName: "httpd"
+          ContainerName: "nginx"
           ContainerPort: 80
+
